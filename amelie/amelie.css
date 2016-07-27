@@ -1,0 +1,74 @@
+img {
+    max-width: 100%;  /*make images fit into the page*/
+    image-orientation: from-image;  /*uses metadata information contained in photos to orientate photos if needed, might not work with chrome*/
+}
+body {
+    /*max-width: 960px;*/
+    margin: 50px;
+    margin-bottom: 200px;
+    font-family: arial;
+    background-color: #bdbdbd
+}
+.headerframe {          /*headerframe is a header container to allow extra style choices on the header text*/
+    height: 125px;
+    background-color: gray;
+    border-top-left-radius: 20px;
+    position: relative;   /* set the possitioning for the other elements contained iside block */
+}
+.header {
+    font-family: courier;
+    position:absolute;
+    margin: 5px;
+    max-width: 80%;
+    bottom: 0;
+    color: white;
+}
+.textphotocontainer {
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.textblock {
+
+    width: 40%;
+    margin-top: 50px;
+    margin-right: 4%;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 50px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: justify;
+}
+.photoblock {
+    width: 60%;
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+.imageframe {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+
+
+}
+.title {
+    font-weight: bolder;
+}
+.gallery {
+    flex: 1 100%;
+    margin-top: 20px;
+    padding: 4%;
+    background-color: gray;
+    border-radius: 20px;
+    min-height: 200px;
+}
