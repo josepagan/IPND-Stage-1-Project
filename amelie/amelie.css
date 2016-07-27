@@ -1,6 +1,13 @@
 img {
     max-width: 100%;  /*make images fit into the page*/
-    image-orientation: from-image;  /*uses metadata information contained in photos to orientate photos if needed, might not work with chrome*/
+}
+
+.upsidedown {   /*class created to quickly fix images that for some reason appear upsidedown, add the class to image div that requires rotation*/
+                /*also consider using image-orientation: from-image; when it becomes fully supported as it uses metadata information to sort the orientation*/
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 body {
     /*max-width: 960px;*/
